@@ -1,20 +1,56 @@
-@use './styles/branding';
-
-html,body{
-    margin: 0;
-    padding: 0;
-}
+@import './styles/branding';
+@import './styles/global';
 
 
 .nav {
-
+    margin: 0 $margin-phone;
 }
 
 .header{
     height: 100%;
-    background: teal;
 
-    &__title{
-        color: white;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__unit{
+            background-color: $flame;
+            width: 100%;
+            margin: 4px 0;
+            text-align: center;
+
+            &__heading{
+                color: $olive;
+            }
+        }
     }
+
+ 
+}
+
+.skill{
+    margin: 0 $margin-phone;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+
+        &__unit{
+            width: 100%;
+        }
+
+        &--2{
+            width: 100%;
+            background-color: white;
+
+            &__img{
+                width: 50px;
+                border: 1px solid $olive;
+            }
+        }
+    }
+
+
 }

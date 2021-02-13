@@ -1,15 +1,86 @@
-@use './styles/branding';
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #353531;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul, li {
+  color: white;
+}
+
+.nav {
+  margin: 0 8px;
 }
 
 .header {
   height: 100%;
-  background: teal;
 }
 
-.header__title {
-  color: white;
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container__unit {
+  background-color: #ec4e20;
+  width: 100%;
+  margin: 4px 0;
+  text-align: center;
+}
+
+.header__container__unit__heading {
+  color: #353531;
+}
+
+.skill {
+  margin: 0 8px;
+}
+
+.skill__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill__container__unit {
+  width: 100%;
+}
+
+.skill__container--2 {
+  width: 100%;
+  background-color: white;
+}
+
+.skill__container--2__img {
+  width: 50px;
+  border: 1px solid #353531;
 }
 /*# sourceMappingURL=style.css.map */
