@@ -1,5 +1,6 @@
 @import './styles/branding';
 @import './styles/global';
+@import './styles/fonts';
 
 
 .nav {
@@ -10,19 +11,33 @@
     height: 100%;
 
     &__container{
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+        @include desktop {
+            flex-direction: row;
+        }
+
+        @include tablet{
+            flex-direction: row;
+        }
+
         &__unit{
             background-color: $flame;
             width: 100%;
-            margin: 4px 0;
-            text-align: center;
+            height: 30vw;
+            margin: 0.5%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
 
             &__heading{
                 color: $olive;
+               @include black;
             }
         }
     }
@@ -36,18 +51,45 @@
     &__container{
         display: flex;
         flex-direction: column;
+        @include tablet{
+            flex-direction: row;
+        }
 
         &__unit{
             width: 100%;
+            @include tablet{
+                width: 50%;
+            }
+
+            &__list{
+                padding: 0;
+                margin: 0;
+                @include light;
+            }
         }
 
         &--2{
             width: 100%;
-            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            @include tablet{
+                width: 50%;
+            }
+
+            &__square{
+                width: 30%;
+                background-color: white;
+                border: 1px solid $olive;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(1.5);
+                }
+            }
 
             &__img{
-                width: 50px;
-                border: 1px solid $olive;
+                width: 100%;
+                
             }
         }
     }
