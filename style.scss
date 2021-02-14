@@ -20,7 +20,10 @@
     }
 
     &__container{
-        display: inline;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
 
         &__links{
             @include light;
@@ -100,6 +103,7 @@
     margin: 0 $margin-phone;
 
     &__container{
+        margin: $margin-phone;
         display: flex;
         flex-direction: column;
         @include tablet{
@@ -118,6 +122,11 @@
 
             &__title{
                 @include bold;
+                text-align: center;
+
+                @include tablet{
+                    text-align:left;
+                }
             }
 
             &__list{
@@ -128,8 +137,9 @@
         }
 
         &--2{
-            margin: $margin-phone 0;
-            width: 100%;
+            margin: $margin-phone auto;
+            // width: 100%;
+            width: 90%;
             display: flex;
             flex-flow: row wrap;
             @include tablet{
@@ -145,12 +155,30 @@
 
                 &:hover{
                     transform: scale(1.5);
+                    display: block;
+    
                 }
             }
 
             &__img{
                 width: 100%;
                 
+            }
+
+            &__text{
+                @include light-italic;
+                color: $olive;
+                font-size: 0.5em;
+                display: none;
+
+                @include tablet{
+                    font-size: 1em;
+                }
+            }
+
+            &__square:hover &__text{
+                transition: 0.5s ease;
+                display: block;
             }
         }
     }

@@ -58,7 +58,19 @@ ul, li {
 }
 
 .nav__container {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__container__links {
@@ -160,6 +172,7 @@ ul, li {
 }
 
 .skill__container {
+  margin: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +207,13 @@ ul, li {
 .skill__container__unit__title {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .skill__container__unit__title {
+    text-align: left;
+  }
 }
 
 .skill__container__unit__list {
@@ -204,8 +224,8 @@ ul, li {
 }
 
 .skill__container--2 {
-  margin: 8px 0;
-  width: 100%;
+  margin: 8px auto;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,10 +253,32 @@ ul, li {
 .skill__container--2__square:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  display: block;
 }
 
 .skill__container--2__img {
   width: 100%;
+}
+
+.skill__container--2__text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #353531;
+  font-size: 0.5em;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .skill__container--2__text {
+    font-size: 1em;
+  }
+}
+
+.skill__container--2__square:hover .skill__container--2__text {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  display: block;
 }
 
 .footer {
