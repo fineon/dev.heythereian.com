@@ -106,8 +106,7 @@ ul, li {
   }
 }
 
-.header__container__unit {
-  background-color: #ec4e20;
+.header__container__unit, .header__container__unit__link {
   width: 100%;
   height: 30vw;
   margin: 0.5%;
@@ -126,20 +125,26 @@ ul, li {
           align-items: center;
 }
 
-.header__container__unit:first-child {
+.header__container__unit__link:first-child {
   background-image: url("./assets/codingscreen.jpg");
   background-size: 200%;
 }
 
-.header__container__unit:nth-child(2) {
+.header__container__unit__link:nth-child(2) {
   background-image: url("./assets/webdesigndemo.jpg");
   background-size: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
 
-.header__container__unit:last-child {
-  background-image: url("./assets/1000px-Sass_Logo_Color.svg.png");
+.header__container__unit__link:nth-child(2):hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.header__container__unit__link:last-child {
+  background-image: url("./assets/shopify_glyph.svg");
+  background-size: cover;
 }
 
 .header__container__unit__heading {

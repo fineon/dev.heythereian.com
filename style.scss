@@ -49,7 +49,6 @@
         }
 
         &__unit{
-            background-color: $flame;
             width: 100%;
             height: 30vw;
             margin: 0.5%;
@@ -58,24 +57,32 @@
             justify-content: center;
             align-items: center;
 
-            &:first-child{
-                background-image: url('./assets/codingscreen.jpg');
-                background-size:200%;
-            }
+            &__link{
+                @extend .header__container__unit;
 
-            &:nth-child(2){
-                background-image: url('./assets/webdesigndemo.jpg');
-                background-size: cover;
-                filter: grayscale(100%) ;
-            }
-
-            &:last-child{
-                background-image: url('./assets/1000px-Sass_Logo_Color.svg.png');
-
-                &:hover{
-
+                &:first-child{
+                    background-image: url('./assets/codingscreen.jpg');
+                    background-size:200%;
                 }
-                
+    
+                &:nth-child(2){
+                    background-image: url('./assets/webdesigndemo.jpg');
+                    background-size: cover;
+                    filter: grayscale(100%);
+                    &:hover{
+                        filter: none;
+                    }
+                }
+    
+                &:last-child{
+                    background-image: url('./assets/shopify_glyph.svg');
+                    background-size: cover;
+                    &:hover{
+    
+                    }
+                    
+                }
+
             }
 
             &__heading{
