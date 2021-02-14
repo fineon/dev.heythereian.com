@@ -135,6 +135,15 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container__unit, .header__container__unit__link {
+    -webkit-clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%);
+            clip-path: polygon(6% 0, 100% 0%, 94% 100%, 0% 100%);
+  }
 }
 
 .header__container__unit__link:first-child {
@@ -265,6 +274,7 @@ ul, li {
   width: 30%;
   background-color: white;
   border: 1px solid #353531;
+  padding: 8px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
