@@ -171,8 +171,28 @@ ul, li {
   margin: 0 8px;
 }
 
+.skill__divider, .skill__divider--blue, .skill__divider--orange {
+  width: 30%;
+  border: 2px solid #ec4e20;
+  margin: auto;
+}
+
+.skill__divider--blue {
+  border: 2px solid #016fb9;
+}
+
+.skill__divider--orange {
+  border: 2px solid #ff9505;
+}
+
+@media screen and (min-width: 768px) {
+  .skill__divider, .skill__divider--blue, .skill__divider--orange {
+    margin: 0;
+  }
+}
+
 .skill__container {
-  margin: 8px;
+  margin: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +237,6 @@ ul, li {
 }
 
 .skill__container__unit__list {
-  padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
