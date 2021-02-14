@@ -12,9 +12,15 @@
 
 <body>
     <nav class="nav">
-        <h2>Ian Nguyen</h2>
-        <a href="">Marketer website</a>
-        <a href="">ian@heythereian.com</a>
+        <h2 class="nav__title">Ian Nguyen</h2>
+        <div class="nav__container">
+            <a 
+            class="nav__container__links"
+            href="https://www.linkedin.com/in/qv-nguyen/">LinkedIn</a>
+            <a 
+            class="nav__container__links"
+            href="mailto: ian@heythereian.com">Email: ian@heythereian.com</a>
+        </div>
     </nav>
 
     <header class="header">
@@ -41,8 +47,10 @@
     <section class="skill">
         <div class="skill__container">
             <div class="skill__container__unit">
-                <a href="#webdev">
-                    <h2>Web Developer</h2>
+                <a 
+                class="skill__container__unit__title-link"
+                href="#webdev">
+                    <h2 class="skill__container__unit__title">Web Developer</h2>
                 </a>
 
                 <ul class="skill__container__unit__list">
@@ -76,11 +84,11 @@
 
     </section>
 
-    <footer>
-        <a href="">
+    <footer class="footer">
+        <a href="" class="footer__link">
             Proud to be an alumni from BrainStation
         </a>
-        <a href="">Github</a>
+        <a href="" class="footer__link">Github</a>
     </footer>
 
     <script src="./script.js"></script>

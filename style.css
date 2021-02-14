@@ -25,6 +25,46 @@ ul, li {
 
 .nav {
   margin: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.nav__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+
+.nav__container {
+  display: inline;
+}
+
+.nav__container__links {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  margin: 8px;
 }
 
 .header {
@@ -86,10 +126,28 @@ ul, li {
           align-items: center;
 }
 
+.header__container__unit:first-child {
+  background-image: url("./assets/codingscreen.jpg");
+  background-size: 200%;
+}
+
+.header__container__unit:nth-child(2) {
+  background-image: url("./assets/webdesigndemo.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.header__container__unit:last-child {
+  background-image: url("./assets/1000px-Sass_Logo_Color.svg.png");
+}
+
 .header__container__unit__heading {
-  color: #353531;
+  color: white;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 900;
+  -webkit-filter: drop-shadow(10px 5px 10px black);
+          filter: drop-shadow(10px 5px 10px black);
 }
 
 .skill {
@@ -112,6 +170,9 @@ ul, li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -125,6 +186,11 @@ ul, li {
   }
 }
 
+.skill__container__unit__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+
 .skill__container__unit__list {
   padding: 0;
   margin: 0;
@@ -133,6 +199,7 @@ ul, li {
 }
 
 .skill__container--2 {
+  margin: 8px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,6 +213,7 @@ ul, li {
 @media screen and (min-width: 768px) {
   .skill__container--2 {
     width: 50%;
+    margin: 32px 0;
   }
 }
 
@@ -164,5 +232,15 @@ ul, li {
 
 .skill__container--2__img {
   width: 100%;
+}
+
+.footer {
+  margin: 8px;
+}
+
+.footer__link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
