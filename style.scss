@@ -109,6 +109,17 @@
 .skill{
     margin: 0 $margin-phone;
 
+    &__banner{
+        @include light-italic;
+        color: white;
+        background-color: $spanishblue;
+        font-size: 1em;
+        padding: 8px;
+        width: 20%;
+        height: 20%;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+
     &__divider{
         width: 30%;
         border: 2px solid $flame;
@@ -207,6 +218,12 @@
                     font-size: 1em;
                 }
 
+            }
+
+            &__heading{
+                @include bold;
+                color: $olive;
+                text-align: center;
             }
 
             &__text{

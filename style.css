@@ -180,6 +180,20 @@ ul, li {
   margin: 0 8px;
 }
 
+.skill__banner {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  background-color: #016fb9;
+  font-size: 1em;
+  padding: 8px;
+  width: 20%;
+  height: 20%;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
 .skill__divider, .skill__divider--blue, .skill__divider--orange {
   width: 30%;
   border: 2px solid #ec4e20;
@@ -305,6 +319,13 @@ ul, li {
   .skill__container--2__button {
     font-size: 1em;
   }
+}
+
+.skill__container--2__heading {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  color: #353531;
+  text-align: center;
 }
 
 .skill__container--2__text {
