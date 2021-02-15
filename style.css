@@ -326,6 +326,13 @@ ul, li {
   font-weight: 700;
   color: #353531;
   text-align: center;
+  font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .skill__container--2__heading {
+    font-size: 1em;
+  }
 }
 
 .skill__container--2__text {

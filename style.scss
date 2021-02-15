@@ -224,6 +224,11 @@
                 @include bold;
                 color: $olive;
                 text-align: center;
+                font-size: 0.7em;
+
+                @include tablet{
+                    font-size: 1em;
+                }
             }
 
             &__text{

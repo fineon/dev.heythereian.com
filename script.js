@@ -21,6 +21,19 @@ const removeAnnote = () => {
 
     let banner = document.querySelector('.skill__banner');
 
+    if (!banner) {
+        console.log('none');
+    } else {
+        const remv = (e) => {
+            divSelect.removeChild(banner);
+            console.log(e,'removed');
+            divSelect.removeEventListener('mouseover', remv );
+        }
+
+        divSelect.addEventListener('mouseover', remv );
+ 
+    }
+
     // if (!banner) {
     //     console.log('none');
     // } else {
@@ -34,23 +47,6 @@ const removeAnnote = () => {
     //         console.log(e,'removed')
     //     })
     // }
-
-
-
-    if (!banner) {
-        console.log('none');
-    } else {
-        const remv = (e) => {
-            divSelect.removeChild(banner);
-            console.log('removed');
-            divSelect.removeEventListener('mouseover', remv );
-        }
-
-        divSelect.addEventListener('mouseover', remv );
-
-        
-    }
-
 
     /*
     let divSelect = document.querySelectorAll('.skill__container--2__square');
