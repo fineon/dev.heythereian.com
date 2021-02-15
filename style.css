@@ -289,6 +289,24 @@ ul, li {
   width: 100%;
 }
 
+.skill__container--2__button {
+  width: 50%;
+  background-color: #016fb9;
+  padding: 4px;
+  margin: 4px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.5em;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .skill__container--2__button {
+    font-size: 1em;
+  }
+}
+
 .skill__container--2__text {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
@@ -304,7 +322,7 @@ ul, li {
   }
 }
 
-.skill__container--2__square:hover .skill__container--2__text {
+.skill__container--2__square:hover * {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   display: block;
