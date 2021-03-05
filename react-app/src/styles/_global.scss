@@ -1,0 +1,44 @@
+//all global styles for consistency
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: $olive;
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul, li{
+    color: white;
+}
+
+//all of media rules that will compile into bigger ruleset, pulled from each child component
+@mixin desktop {
+    @media screen and (min-width:1200px) {
+        @content
+    }
+};
+
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content
+    }
+};
+
+@mixin phone {
+    @media screen and (min-width:320px) {
+        @content
+    }
+}
