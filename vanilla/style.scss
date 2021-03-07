@@ -86,10 +86,6 @@
                 &:last-child{
                     background-image: url('./assets/shopify_glyph.svg');
                     background-size: cover;
-                    &:hover{
-    
-                    }
-                    
                 }
 
             }
@@ -171,6 +167,10 @@
                 // padding: 0;
                 margin: 0;
                 @include light;
+
+                &__item{
+                    margin: 8px 0;
+                }
             }
         }
 
@@ -186,15 +186,22 @@
             }
 
             &__square{
-                width: 30%;
+                width: 35%;
+                height: auto;
+                
                 background-color: white;
                 border: 1px solid $olive;
                 padding: 8px;
                 transition: 0.5s;
 
                 &:hover{
-                    transform: scale(1.5);
+                    // transform: scale(2);
+                    // @include phone {
+                    //     transform: scale(1.5);
+                    // }
+                    margin: 4px 16px;
                     display: block;
+
     
                 }
             }
@@ -212,7 +219,7 @@
                 @include regular;
                 font-size: 0.5em;
                 text-align: center;
-                display: none;
+                // display: none;
                 
                 @include tablet{
                     font-size: 1em;
@@ -234,18 +241,18 @@
             &__text{
                 @include light-italic;
                 color: $olive;
-                font-size: 0.5em;
-                display: none;
+                font-size: 0.8rem;
+                // display: none;
 
                 @include tablet{
-                    font-size: 1em;
+                    font-size: 1rem;
                 }
             }
 
-            &__square:hover *{
-                transition: 0.5s ease;
-                display: block;
-            }
+            // &__square:hover *{
+            //     transition: 0.5s ease;
+            //     // display: block;
+            // }
         }
     }
 

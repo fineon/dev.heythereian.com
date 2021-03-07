@@ -265,6 +265,10 @@ ul, li {
   font-weight: 300;
 }
 
+.skill__container__unit__list__item {
+  margin: 8px 0;
+}
+
 .skill__container--2 {
   margin: 8px auto;
   width: 90%;
@@ -285,7 +289,8 @@ ul, li {
 }
 
 .skill__container--2__square {
-  width: 30%;
+  width: 35%;
+  height: auto;
   background-color: white;
   border: 1px solid #353531;
   padding: 8px;
@@ -294,8 +299,7 @@ ul, li {
 }
 
 .skill__container--2__square:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  margin: 4px 16px;
   display: block;
 }
 
@@ -312,7 +316,6 @@ ul, li {
   font-weight: 400;
   font-size: 0.5em;
   text-align: center;
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -340,20 +343,13 @@ ul, li {
   font-weight: 300;
   font-style: italic;
   color: #353531;
-  font-size: 0.5em;
-  display: none;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
   .skill__container--2__text {
-    font-size: 1em;
+    font-size: 1rem;
   }
-}
-
-.skill__container--2__square:hover * {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  display: block;
 }
 
 .footer {

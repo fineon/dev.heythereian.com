@@ -1,7 +1,8 @@
 window.onload = function annotate() {
-    console.log('document was loaded');
-    insertAnnote();
-    removeAnnote();
+    console.log('oh hey there, welcome to the console! I post my learning notes and codebase on my Github at github.com/fineon. Thanks for having a look :)')
+    // removing the hover effect and DOM manipulation for better UX flow
+    // insertAnnote();
+    // removeAnnote();
 }
 
 const insertAnnote = () => {
